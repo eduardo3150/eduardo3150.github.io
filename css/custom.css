@@ -3,10 +3,23 @@
     margin: auto;
 }
 
-body {}
+body {
+  font-family: Arial;
+}
 
-h1, h2, h3, p {
+hr {
+  border-color: #6A1B9A;
+  background-color: #6A1B9A;
+}
+
+
+h1, h2, h3, h4, h5 {
     color: #6A1B9A;
+}
+
+p{
+  color: #6A1B9A;
+  text-align: center;
 }
 
 .headerCust {
@@ -16,7 +29,7 @@ h1, h2, h3, p {
     font-size: 2.5em;
 }
 
-.container{    
+.container {
     padding-top: 2.5%;
 }
 
@@ -34,4 +47,19 @@ h1, h2, h3, p {
     -ms-transition: background-color 1000ms ease, color 800ms ease;
     transition: background-color 1000ms ease, color 800ms ease;
     border: none;
+}
+
+.efectoHov2 {
+  background-color: #6A1B9A;
+  color: white;
+}
+
+.efectoHov2:hover {
+  background-color: white;
+  color: #6A1B9A;
+}
+
+
+.formCust {
+  border-color: #6A1B9A;
 }
