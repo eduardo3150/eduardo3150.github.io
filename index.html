@@ -3,126 +3,123 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="theme-color" content="#6A1B9A">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Hoja de Vida</title>
+
+    <title>Biblioteca JS</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/myCSS.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/biblioteca.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
 
 </head>
 
 <body>
-    <div class="container-fluid">
+  <div class="jumbotron text-center headCust">
+    <h1>Biblioteca</h1>
+    <p>Registra tus libros favoritos</p>
+  </div>
+    <div class="container">
         <div class="row">
-            <div class="col-md-12 .col-xs-12 text-center headerCust">
-                Luis Eduardo Chávez Barillas
-            </div>
-        </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+                <form class="form-horizontal">
+                    <div class="col-md-6 ">
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="nombre">Nombre: </label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="inputName" value="" placeholder="Nombre">
+                            </div>
 
-        <div class="container">
-            <div class="row">
+                        </div>
 
-                <div class="col-md-3 .col-xs-3 .col-xs-offset-3">
-                    <div class="centerBlock">
-                        <img src="img/profile.jpg" class="img-responsive thumbnail pictureCust" alt="foto">
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="nombre">Tipo: </label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="inputType" value="" placeholder="Tipo">
+                            </div>
+                        </div>
                     </div>
 
-                    <ul class="list-group" style="margin-top:3.5%;">
-                        <p class="list-group-item efectoHov">
-                            Edad: 20 años <br> Nacionalidad: Salvadoreña <br> Teléfono: 2257-7777 <br> E-mail: mccartney3150@gmail.com <br>
-                        </p>
-                        <hr>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="nombre">Editorial: </label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="inputEditorial" value="" placeholder="Editorial">
+                            </div>
+                        </div>
 
-                        <p class="list-group-item efectoHov">
-                            <b>Inglés (Avanzado)</b> <br> TOEFL (Test of English as a Foreign Language)<br> TOEIC (Test of English for International Communication)<br>
-                            <br>
-                            <b>Informática</b> <br> Certificación Microsoft Office Word 2010 <br> Certificación Microsoft Office Excel 2010 <br> Certificación Microsoft Office Power Point 2010 <br>
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="nombre">Autor: </label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="inputAutor" value="" placeholder="Autor del libro">
+                            </div>
+                        </div>
+                    </div>
 
-                        </p>
-                        <hr>
-                        <p class="list-group-item efectoHov">Otros datos interesantes <br>
-                            <span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
-                        </p>
-                    </ul>
+                </form>
 
+
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="container col-xs-12 col-md-8 col-md-offset-2 form-group">
+                <div class="col-md-6 form-group">
+                    <button type="submit" class="btn btn-success btn-block" id="addLibro">Agregar</button>
                 </div>
 
-                <div class="col-md-9 .col-md-offset-3  .col-xs-3 .col-xs-offset-3">
 
-                    <ul class="list-group lead text-center">
-                        <br>
-                        <hr>
-                        <h2 class="list-group-item efectoHov">Ocupación</h2>
-                        <hr>
-                        <p>Desarrollador de aplicaciones móviles <br> Estudiante
-                        </p>
-
-                        <hr>
-                        <h2 class="list-group-item efectoHov">Formación académica</h2>
-                        <hr>
-                        <p><b>Centro Cultural Salvadoreño Americano</b><br> Bachillerato General 2012-2013 <br> Asistente Técnico Bilingüe 2014<br>
-                            <br>
-                            <b>Universidad Don Bosco</b> <br> Técnico en Desarrollo de Aplicaciones móviles 2016 - presente</p>
-
-                        <hr>
-                        <h2 class="list-group-item efectoHov">Experiencia Laboral</h2>
-                        <hr>
-                        <p><b>Grupo Editorial Altamirano </b> <br> Asistente administrativo en América Interactiva S.A de C.V 2014 (Pasantía)(4 meses) <br>
-                            <br>
-                            <b>SYKES El Salvador LTDA.</b> <br> Agente de atención al cliente 2015 (8 meses)</p>
-
-                        <hr>
-                        <h2 class="list-group-item efectoHov">Referencia y disponiblidad</h2>
-                        <hr>
-                        <p><b>Referencias</b><br>
-                            <b>Persona 1</b> - persona1@mailto.com<br> Referencia 1 <br>
-                            <b>Persona 2</b> - persona2@mailto.com<br> Referencia 2 <br>
-                            <br>
-                            <b>Contáctame</b> <br>
-                        </p>
-
-                        <form class="form-horizontal">
-                            <div class="form-group">
-                                <label for="name" class="col-sm-2 control-label"><p>Nombre</p></label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control formCust" id="name" name="name" placeholder="Nombre y apellido" value="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="col-sm-2 control-label"><p>Email</p></label>
-                                <div class="col-sm-10">
-                                    <input type="email" class="form-control formCust" id="email" name="email" placeholder="example@domain.com" value="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="message" class="col-sm-2 control-label"><p>Mensaje</p></label>
-                                <div class="col-sm-10">
-                                    <textarea class="form-control formCust" rows="4" name="message"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <input id="submit" name="submit" type="submit" class="btn btn-custom disabled">
-                                </div>
-                            </div>
-
-                        </form>
-
-                    </ul>
-
+                <div class="col-md-6 form-group">
+                    <button type="submit" class="btn btn-warning btn-block" id="delLibro">Limpiar</button>
                 </div>
+
             </div>
         </div>
+
+        <div class="row">
+            <div class="container col-xs-12 col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Listado de libros</div>
+                    <!-- Table -->
+                    <div class="table-responsive">
+                        <table class="table" id="tableBiblioteca">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Tipo</th>
+                                    <th>Editorial</th>
+                                    <th>Autor del libro</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>as</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
