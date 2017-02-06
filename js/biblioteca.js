@@ -2,6 +2,7 @@ var nombre;
 var tipo;
 var editorial;
 var autor;
+var showTable;
 
 function getData() {
     nombre = document.getElementById('inputName').value;
@@ -12,12 +13,13 @@ function getData() {
 
 function addElement() {
     getData();
+
     if ((nombre === null) || (nombre === "") ||
         (tipo === null) || (tipo === "") ||
         (editorial === null) || (editorial === "") ||
         (autor === null) || (autor === "")) {
-        alert("Error uno o mas campos se encuentran vacios");
 
+        alert("Error uno o mas campos se encuentran vacios");
 
     } else {
         var table = document.getElementById('tableBiblioteca');
@@ -33,37 +35,39 @@ function addElement() {
         celda3.innerHTML = editorial;
         celda4.innerHTML = autor;
 
-        alert("Libro agregado");
+        alert(nombre+" añadido");
 
-        delElement();
+        cleanElement();
     }
 
 }
 
-function delElement() {
+function cleanElement() {
     document.getElementById('inputName').value = "";
     document.getElementById('inputType').value = "";
     document.getElementById('inputEditorial').value = "";
     document.getElementById('inputAutor').value = "";
 }
 
+
+function showElement() {
+    if (showTable.style.display=== 'none') {
+      showTable.style.display= '';
+
+    } else {
+      showTable.style.display= 'none';
+    }
+}
+
 function init() {
-    var showTable = document.getElementById('table_container');
+    showTable = document.getElementById('table_container');
     showTable.style.display= 'none';
 
     document.getElementById('addLibro').onclick = function() {
         addElement();
     };
-    var showLibro =   document.getElementById('showLibro');
-      showLibro.onclick = function() {
-
-      if (showTable.style.display=== 'none') {
-        showTable.style.display= '';
-
-      } else {
-        showTable.style.display= 'none';
-      }
-
+    document.getElementById('showLibro').onclick = function() {
+        showElement();
     };
 }
 
